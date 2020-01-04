@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="header.container">
+            <block class="DoIRun\A2019\Block\ConfigData" name="header.notice" template="header_notice.phtml" before="-" />
+        </referenceBlock>
+        <referenceBlock name="head.additional">
+            <block class="DoIRun\A2019\Block\ConfigData" name="a2019.theme.css" template="header_css.phtml" after="-" />
+        </referenceBlock>
+        <referenceContainer name="page.top">
+            <block class="DoIRun\A2019\Block\ConfigData" name="content.above" template="content_above.phtml" before="breadcrumbs" />
+        </referenceContainer>
+        <referenceContainer name="footer">
+            <block class="DoIRun\A2019\Block\ConfigData" name="footer.top" template="footer_top.phtml" before="-" />
+            <block class="DoIRun\A2019\Block\ConfigData" name="footer.links" template="footer_links.phtml" after="footer.top"/>
+            <block class="DoIRun\A2019\Block\ConfigData" name="footer.copyright" template="footer_copyright.phtml" after="footer.links" />
+            <block class="DoIRun\A2019\Block\ConfigData" name="footer.add.html" template="footer_html.phtml" after="-" />
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,9 @@
+<?php
+/* Custom */
+?>
+<div class="doirun-notice">
+    <?php
+        echo $block->getConfig('a2019_theme/enable/doirun_a2019_onoff') ?
+            $this->getLayout()->CreateBlock('Magento\Cms\Block\Block')->setBlockId($block->getConfig('a2019_theme/header/doirun_a2019_header_notice'))->toHtml() : "";
+    ?>
+</div>

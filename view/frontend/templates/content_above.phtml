@@ -1,0 +1,9 @@
+<?php
+/* Custom */
+?>
+<div class="doirun-content-above">
+    <?php
+        echo $block->getConfig('a2019_theme/enable/doirun_a2019_onoff') ?
+            $this->getLayout()->CreateBlock('Magento\Cms\Block\Block')->setBlockId($block->getConfig('a2019_theme/menu/doirun_a2019_content_above'))->toHtml() : "";
+    ?>
+</div>

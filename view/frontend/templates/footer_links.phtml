@@ -1,0 +1,9 @@
+<?php
+/* Custom */
+?>
+<div class="doirun-footer-links">
+    <?php
+    echo $block->getConfig('a2019_theme/enable/doirun_a2019_onoff') ?
+        $this->getLayout()->CreateBlock('Magento\Cms\Block\Block')->setBlockId($block->getConfig('a2019_theme/footer/doirun_a2019_footer_links'))->toHtml() : "";
+    ?>
+</div>
